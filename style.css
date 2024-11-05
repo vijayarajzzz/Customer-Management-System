@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001f3f; /* Dark blue background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4caf50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+canvas {
+    background-color: #ffffff;
+    border: 5px solid black;
+    border-radius: 8px;
+}
+
+.controls {
+    margin: 10px 0;
+}
+
+/* Base button styling */
+.image-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Start button image */
+.start-image {
+    background-image: url("images/start-image.png");
+}
+
+/* Reset button image */
+.reset-image {
+    background-image: url("images/restart-button.png");
+}
+
+
+
+#score {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #161313;
+    font-weight: bold;
+}
+
+/* Scoreboard styling */
+#scoreboard-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#scoreboard {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(234, 224, 224);
+    margin: 0;
+}
+
+#scoreboard li {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#scoreboard li:last-child {
+    border-bottom: none;
+}
+
+#scoreboard li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
